@@ -1,0 +1,146 @@
+---
+output: github_document
+always_allow_html: true
+editor_options: 
+  markdown: 
+    wrap: 72
+  chunk_output_type: console
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%",
+  message = FALSE,
+  warning = FALSE,
+  fig.retina = 2,
+  fig.align = 'center'
+)
+```
+
+# fstpindia
+
+<!-- badges: start -->
+
+[![License: CC BY
+4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![R-CMD-check](https://github.com/agentsforsci-ghe/fstp-eval-india/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/agentsforsci-ghe/fstp-eval-india/actions/workflows/R-CMD-check.yaml)
+
+<!-- badges: end -->
+
+The goal of fstpindia is to provide the data of the report *Evaluation of
+FSTPs and STP Co-treatment Systems across India* by the Centre for
+Science and Environment (CSE), New Delhi, 2023, as tidy datasets in R
+and as CSV and XLSX files. The report evaluated 69 faecal sludge
+treatment plants (FSTPs) and sewage treatment plants (STPs) with
+co-treatment of faecal sludge in eight Indian states.
+
+## Installation
+
+You can install the development version of fstpindia from
+[GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("agentsforsci-ghe/fstp-eval-india")
+```
+
+```{r}
+## Run the following code in console if you don't have the packages
+## install.packages(c("dplyr", "knitr", "readr", "stringr", "kableExtra"))
+library(dplyr)
+library(knitr)
+library(readr)
+library(stringr)
+library(kableExtra)
+```
+
+Alternatively, you can download the individual datasets as a CSV or XLSX
+file from the table below.
+
+1.  Click Download CSV. A window opens that displays the CSV in
+    your browser.
+2.  Right-click anywhere inside the window and select "Save Page As...".
+3.  Save the file in a folder of your choice.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+extdata_path <- "https://github.com/agentsforsci-ghe/fstp-eval-india/raw/main/inst/extdata/"
+
+read_csv("data-raw/dictionary.csv") |> 
+  distinct(file_name) |> 
+  dplyr::mutate(file_name = str_remove(file_name, ".rda")) |> 
+  dplyr::rename(dataset = file_name) |> 
+  mutate(
+    CSV = paste0("[Download CSV](", extdata_path, dataset, ".csv)"),
+    XLSX = paste0("[Download XLSX](", extdata_path, dataset, ".xlsx)")
+  ) |> 
+  knitr::kable()
+
+```
+
+## Data
+
+The package provides access to ...
+
+```{r}
+library(fstpindia)
+```
+
+### bod_compliance
+
+The dataset `bod_compliance` contains data about ... It has
+`r nrow(bod_compliance)` observations and `r ncol(bod_compliance)`
+variables
+
+```{r}
+bod_compliance |> 
+  head(3) |> 
+  knitr::kable()
+```
+
+For an overview of the variable names, see the following table.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+readr::read_csv("data-raw/dictionary.csv") |>
+  dplyr::filter(file_name == "bod_compliance.rda") |>
+  dplyr::select(variable_name:description) |> 
+  knitr::kable() |> 
+  kableExtra::kable_styling("striped") |> 
+  kableExtra::scroll_box(height = "200px")
+```
+
+## Example
+
+Describe here what the plot below shows and why it is a useful first look
+at the data.
+
+```{r}
+library(fstpindia)
+# install.packages("ggplot2")
+# library(ggplot2)
+
+# A first plot of the data: replace the aesthetics with variables from
+# bod_compliance, then uncomment the block and the library call above.
+# bod_compliance |>
+#   ggplot(aes(x = , y = )) +
+#   geom_point() +
+#   labs(x = "", y = "", title = "")
+```
+
+## License
+
+Data are available as
+[CC-BY](https://github.com/agentsforsci-ghe/fstp-eval-india/blob/main/LICENSE.md).
+
+## Citation
+
+Please cite this package using:
+
+```{r}
+citation("fstpindia")
+```

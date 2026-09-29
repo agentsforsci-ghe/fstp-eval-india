@@ -1,0 +1,23 @@
+plant_id,state,technology,plant,cod_removal_pct,bod_removal_pct,tkn_removal_pct,ph,faecal_coliform_mpn_100ml,discharge_cod_mgl,discharge_bod_mgl
+uk-lakkarghat,Uttarakhand,SBR,Lakkarghat,90.8,90.5,64.9,7.8,561,48,7.5
+uk-tapovan,Uttarakhand,SBR,Tapovan,89.6,98.5,88.6,7.8,5767,78,2.8
+uk-mothrowala-i,Uttarakhand,SBR,Mothrowala -I,89.8,92.8,72.1,7.9,25833,39.7,4.3
+uk-mothrowala-ii,Uttarakhand,SBR,Mothrowala -II,80.8,77.7,88.6,7.6,3151,57.3,13.3
+uk-indira-nagar,Uttarakhand,SBR,Indranagar,92.5,88.9,55.1,7.8,36678,30.3,7.9
+uk-jagjeetpur-i,Uttarakhand,SBR,Jagjeetpur-I,93.6,96.3,81.1,7.7,117,23.5,3.8
+uk-jagjeetpur-ii,Uttarakhand,SBR,Jagjeetpur- II,75.8,85.6,79.6,7.8,16,103,13
+uk-sarai-i,Uttarakhand,SBR,Sarai -I,89.7,88.9,94.3,7.9,13,62.5,12
+uk-sarai-ii,Uttarakhand,SBR,Sarai -II,86.5,87.3,55.1,7.3,460000,86,19
+tn-madurai,Tamil Nadu,SBR,Madurai,90.5,90.1,45.7,8.3,1193.3,69.3,17.3
+tn-ukkadam,Tamil Nadu,SBR,Ukkadam,89.3,87.5,69.6,8.1,4476.7,82,23.3
+tn-erode,Tamil Nadu,MBBR,Erode,82.3,81.9,89.1,8.3,886.7,53.3,13.7
+tg-khajaguda,Telangana,MBBR,Khajaguda,93.6,92.6,44.9,7.2,125500,88,20.5
+tg-nanakramguda,Telangana,MBBR,Nanakramkuda,97.2,95.3,40.2,8,37434.3,74.67,21.33
+uk-chorpani,Uttarakhand,MBBR,Chorpani,88.9,90.9,51.1,7.4,374433,77.7,11.9
+uk-chandreswar,Uttarakhand,MBBR,Chandreswar,84.4,88.4,83.4,7.6,11933,46.3,7
+up-bingawan,Uttar Pradesh,UASB,Bingwan,81.1,89.8,51.8,7.7,100666.7,94,13
+up-bharwara,Uttar Pradesh,UASB,Bharwara,69,79.9,56.5,7.8,54600,78.4,12
+up-bijnor,Uttar Pradesh,UASB,Bijnor,61,61,29,8.4,30,64,16
+tn-trichy,Tamil Nadu,WSP,Trichy,78,76.9,43.9,8.1,1710,74.3,19.3
+od-puri,Odisha,WSP,Puri,52.8,55.9,62.6,7.2,177,90,23.9
+uk-jagjeetpur-iii,Uttarakhand,ASP,Jagjeetpur-III,88.3,89.3,91,7.7,2302,37.5,10

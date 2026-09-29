@@ -1,0 +1,217 @@
+---
+title: "Table 9 of the CSE Phase II report as a CSV file"
+subtitle: "Extraction and checks of the performance data for 47 faecal sludge treatment plants in India"
+date: today
+bibliography: references.bib
+format:
+  docx:
+    number-sections: true
+abstract: |
+  Table 9 of the 2023 Phase II report by the Centre for Science and Environment (CSE) gives the performance of 47 faecal sludge treatment plants (FSTPs) in India, grouped by technology. The report is only available as a PDF. We extracted Table 9 into a CSV file with an R script that reads the text of the PDF, and we describe the columns in a codebook. The CSV file has 47 rows and 10 columns, and every value is the same as in the printed table. All checks passed. They cover the number of rows, the value ranges, the codebook and a comparison with an independent transcription of the discharge BOD. The printed table has four problems, which we list but do not correct. Nalgonda has a missing value, the values for Amethi and Dhenkanal differ from other parts of the report, and the asterisk on Modinagar is not explained.
+---
+
+```{r}
+#| label: setup
+
+library(dplyr)
+library(readr)
+library(knitr)
+library(here)
+
+options(knitr.kable.NA = "")
+
+table_09 <- read_csv(here("data-raw", "table-09-fstp.csv"), show_col_types = FALSE)
+bod <- read_csv(here("data-raw", "bod-discharge.csv"), show_col_types = FALSE)
+codebook <- read_csv(here("data-raw", "codebook.csv"), show_col_types = FALSE)
+
+value_cols <- c(
+  "cod_removal_pct", "bod_removal_pct", "tkn_removal_pct", "ph",
+  "faecal_coliform_mpn_100ml", "discharge_cod_mgl", "discharge_bod_mgl"
+)
+pct_cols <- c("cod_removal_pct", "bod_removal_pct", "tkn_removal_pct")
+
+# Technology groups and number of rows as printed in Table 9
+expected_groups <- c(
+  "DEWATS" = 33, "MBBR" = 6, "Geotube" = 3, "Mizuchi" = 3,
+  "Electrocoagulation-flotation" = 1, "Packaged STP" = 1
+)
+
+n_rows <- nrow(table_09)
+n_cols <- ncol(table_09)
+values <- as.matrix(table_09[value_cols])
+n_cells <- sum(!is.na(values))
+n_empty <- sum(is.na(values))
+group_counts <- table(factor(table_09$technology, levels = names(expected_groups)))
+
+# Plant names in Table 9 that are spelled differently in bod-discharge.csv
+name_lookup <- c(
+  "Jhansi 12KLD" = "Jhansi 12 KLD",
+  "Jhansi 6KLD" = "Jhansi 6 KLD",
+  "Patora, Raipur" = "Patora",
+  "Kumhari, Raipur" = "Kumhari",
+  "Kalibilod, Indore" = "Kalibillod",
+  "Modinagar*" = "Modinagar",
+  "Shandnagar" = "Shadnagar",
+  "Ojus, Jabalpur" = "Ojus",
+  "Elanza, Jabalpur" = "Elanza",
+  "St.Alosius, Jabalpur" = "St. Alosius"
+)
+
+bod_check <- table_09 |>
+  mutate(plant_bod = coalesce(unname(name_lookup[plant]), plant)) |>
+  left_join(
+    bod |> filter(plant_type == "FSTP") |> select(plant, bod_summary_mgl),
+    by = c("plant_bod" = "plant")
+  )
+n_bod_match <- sum(abs(bod_check$discharge_bod_mgl - bod_check$bod_summary_mgl) < 1e-9, na.rm = TRUE)
+
+codebook_vars <- codebook |>
+  filter(file_name == "table-09-fstp.csv") |>
+  pull(variable_name)
+
+checks <- tibble(
+  check = c(
+    "The CSV file has 47 rows",
+    "The rows per technology are 33, 6, 3, 3, 1 and 1",
+    "The serial numbers run from 1 to n within each technology",
+    "The removal percentages are between 0 and 100",
+    "The pH values are between 0 and 14",
+    "No value is negative",
+    "The codebook lists exactly the columns of the CSV file",
+    "The discharge BOD matches the independent transcription for all 47 plants"
+  ),
+  passed = c(
+    n_rows == 47,
+    all(group_counts == expected_groups) && sum(group_counts) == n_rows,
+    all(tapply(table_09$sno, table_09$technology, function(x) identical(as.integer(x), seq_along(x)))),
+    all(unlist(table_09[pct_cols]) >= 0 & unlist(table_09[pct_cols]) <= 100, na.rm = TRUE),
+    all(table_09$ph >= 0 & table_09$ph <= 14),
+    all(values >= 0, na.rm = TRUE),
+    setequal(codebook_vars, names(table_09)) && !anyDuplicated(codebook_vars),
+    n_bod_match == n_rows
+  )
+)
+```
+
+# Introduction
+
+Table 9 of the Phase II report by the Centre for Science and Environment (CSE) gives the performance of the `r n_rows` faecal sludge treatment plants (FSTPs) in the study [@narain2023]. For each plant, the table gives the removal of chemical oxygen demand (COD), biochemical oxygen demand (BOD) and total Kjeldahl nitrogen (TKN). It also gives the pH, faecal coliforms, COD and BOD of the treated discharge water. Each value is the average of several sampling rounds.
+
+The report is only available as a PDF, so the values cannot be used in an analysis without typing them again. We extracted Table 9 into a CSV file with a script, so that anyone can repeat the extraction and reuse the data.
+
+# Methods
+
+## Source
+
+Table 9 is on pages 34 and 35 of the report, which is stored in this repository as `data-raw/1689832445895.pdf`. The table has one row per FSTP. The rows are grouped by technology, and each group starts with a header row.
+
+## Extraction
+
+We extracted the table with the script `data-raw/02-extract-fstp-performance.R`, in the following steps:
+
+- The text of pages 34 and 35 is read with `pdftotext` from the poppler library, which keeps the layout of the page.
+- Each plant is assigned the technology of the group header above it.
+- Each data row is found by its serial number and plant name.
+- Each number is assigned to a column by its position on the page. The one empty cell in the table therefore stays empty, and the values after it do not shift.
+- An error is raised if the number of rows, the rows per technology or the serial numbers differ from the printed table.
+- The result is written to `data-raw/table-09-fstp.csv`.
+
+Every value and plant name in the CSV file is the same as in the printed table, and we did not correct any value. The values are stored as numbers, so trailing zeros are dropped, e.g., 8.0 is stored as 8.
+
+## Columns
+
+@tbl-dictionary describes the `r n_cols` columns of the CSV file. The same descriptions are in the codebook `data-raw/codebook.csv`, which also covers `data-raw/bod-discharge.csv`.
+
+```{r}
+#| label: tbl-dictionary
+#| tbl-cap: "Columns of the file table-09-fstp.csv, from the codebook."
+
+codebook |>
+  filter(file_name == "table-09-fstp.csv") |>
+  select(variable_name, variable_type, unit, description) |>
+  kable(col.names = c("Variable", "Type", "Unit", "Description"))
+```
+
+## Checks
+
+We checked the CSV file in the following ways:
+
+- The number of rows, the rows per technology and the serial numbers agree with the printed table.
+- The removal percentages are between 0 and 100, the pH values are between 0 and 14, and no value is negative.
+- The codebook lists exactly the columns of the CSV file.
+- The discharge BOD agrees with the file `data-raw/bod-discharge.csv`. For that file, we had typed the BOD values of Table 9 by hand and checked them against the PDF. The two files were made in different ways, so agreement between them is a check on both. For `r length(name_lookup)` plants, the names differ between the two files, e.g., "Kalibilod, Indore" in Table 9 and "Kalibillod" in the other file. We matched these plants with a lookup list.
+
+These checks run every time the document is rendered. In addition, we compared every value in the CSV file once with the text of the PDF, row by row, and all `r n_cells` values matched.
+
+# Results
+
+## Extracted data
+
+The CSV file has `r n_rows` rows and `r n_cols` columns (@tbl-groups). Of the `r length(values)` value cells, `r n_empty` is empty, i.e., the BOD removal of Nalgonda, which Table 9 leaves blank. The full table is in the appendix (@tbl-full).
+
+```{r}
+#| label: tbl-groups
+#| tbl-cap: "Number of FSTPs per technology in the extracted table."
+
+tibble(technology = names(group_counts), plants = as.integer(group_counts)) |>
+  bind_rows(tibble(technology = "All", plants = n_rows)) |>
+  kable(col.names = c("Technology", "Plants"), align = "lr")
+```
+
+## Checks
+
+`r sum(checks$passed)` of the `r nrow(checks)` checks passed (@tbl-checks).
+
+```{r}
+#| label: tbl-checks
+#| tbl-cap: "Checks of the extracted table. The checks run every time the document is rendered."
+
+checks |>
+  mutate(passed = if_else(passed, "Passed", "Failed")) |>
+  kable(col.names = c("Check", "Result"))
+```
+
+## Problems in the printed table
+
+Table 9 has four problems. We kept the values as printed, so the same problems are in the CSV file:
+
+- Nalgonda has no BOD removal value in Table 9 (page 35). Graph 5 (page 38) shows 97.2% for this plant.
+- Amethi has 1.2% COD removal and 1.2% BOD removal, with 168 mg/L COD and 48.3 mg/L BOD in the discharge water (page 34). Table 5 of Annexure II (page 175) gives 107 mg/L COD and 30.1 mg/L BOD. Graph 4 (page 38) also gives 30.1 mg/L BOD, and Graph 5 (page 38) gives 29.0% BOD removal.
+- Dhenkanal has 30.6 mg/L BOD in the discharge water (page 34). Table 3 of Annexure II (page 173) and Graph 32 (page 121) give 14.0 mg/L.
+- Modinagar has an asterisk that Table 9 does not explain (page 35). Table 5 of the report (page 31) describes the plant as a hyper core (lamella) system.
+
+# Use notes
+
+Anyone who reuses the CSV file should keep the following points in mind:
+
+- Each value is an average over several sampling rounds, as printed in the report. The CSV file does not contain the single measurements.
+- The values are not corrected. For Amethi and Dhenkanal, compare the values with the other parts of the report before using them.
+- The plant names are the same as in Table 9 and can differ from other tables of the report, e.g., "Shandnagar" in Table 9 and "Shadnagar" in Table 1.
+- To repeat the extraction, run `Rscript data-raw/02-extract-fstp-performance.R` from the root of the repository. The script needs `pdftotext` from the poppler library.
+
+# References {.unnumbered}
+
+::: {#refs}
+:::
+
+# Appendix {.unnumbered}
+
+::: {.landscape}
+
+```{r}
+#| label: tbl-full
+#| tbl-cap: "Table 9 of the report as extracted to table-09-fstp.csv. The empty cell is empty in the printed table."
+
+table_09 |>
+  mutate(across(all_of(value_cols), as.character)) |>
+  kable(
+    col.names = c(
+      "Technology", "S No", "Plant", "COD removal (%)", "BOD removal (%)",
+      "TKN removal (%)", "pH", "Faecal coliform (MPN/100 mL)",
+      "Discharge COD (mg/L)", "Discharge BOD (mg/L)"
+    ),
+    align = "lrlrrrrrrr"
+  )
+```
+
+:::
