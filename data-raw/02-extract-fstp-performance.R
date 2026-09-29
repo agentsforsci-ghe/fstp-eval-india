@@ -1,12 +1,12 @@
 # Extract Table 9 (performance of the 47 FSTPs) from the CSE Phase II report
-# into data/derived_data/table-09-fstp.csv. Values and plant names are kept
+# into data-raw/table-09-fstp.csv. Values and plant names are kept
 # exactly as printed. Requires pdftotext (poppler), e.g. brew install poppler.
 
 library(here)
 library(readr)
 
-pdf <- here("data", "raw_data", "1689832445895.pdf")
-out <- here("data", "derived_data", "table-09-fstp.csv")
+pdf <- here("data-raw", "1689832445895.pdf")
+out <- here("data-raw", "table-09-fstp.csv")
 
 if (Sys.which("pdftotext") == "") {
   stop("pdftotext not found. Install poppler, e.g. with `brew install poppler`.")

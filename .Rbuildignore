@@ -1,0 +1,10 @@
+^LICENSE\.md$
+^analysis$
+^prompts$
+^plans$
+^_quarto\.yml$
+^\.quarto$
+^fstp-eval-india\.Rproj$
+^\.Rproj\.user$
+^data-raw$
+^\.github$

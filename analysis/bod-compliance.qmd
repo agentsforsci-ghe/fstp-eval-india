@@ -39,7 +39,7 @@ tech_order <- c(
   "Waste stabilisation pond", "ASP"
 )
 
-bod <- read_csv(here::here("data", "derived_data", "bod-discharge.csv"), show_col_types = FALSE) |>
+bod <- read_csv(here::here("data-raw", "bod-discharge.csv"), show_col_types = FALSE) |>
   mutate(
     plant_type = factor(plant_type, levels = c("FSTP", "STP co-treatment")),
     meets_summary = bod_summary_mgl <= limit,
@@ -74,11 +74,11 @@ We used the plant data in the report to answer two questions:
 
 ## Data source
 
-All data come from the Phase II report by CSE [@narain2023], which is stored in this repository as `data/raw_data/1689832445895.pdf`. CSE sampled the plants over two years starting in 2021, in Telangana, Tamil Nadu, Odisha, Rajasthan, Uttar Pradesh, Uttarakhand, Madhya Pradesh and Chhattisgarh. Of the `r n_all` plants, `r nrow(fstp)` are FSTPs and `r nrow(stp)` are STPs with co-treatment of faecal sludge. For each plant, the report gives the average of the samples taken from the treated discharge water. Four more FSTPs in Odisha (Surada, Kashinagar, Hinjilicut and Talcher) had no outlet water at the time of sampling, so the report has no effluent data for them and we left them out.
+All data come from the Phase II report by CSE [@narain2023], which is stored in this repository as `data-raw/1689832445895.pdf`. CSE sampled the plants over two years starting in 2021, in Telangana, Tamil Nadu, Odisha, Rajasthan, Uttar Pradesh, Uttarakhand, Madhya Pradesh and Chhattisgarh. Of the `r n_all` plants, `r nrow(fstp)` are FSTPs and `r nrow(stp)` are STPs with co-treatment of faecal sludge. For each plant, the report gives the average of the samples taken from the treated discharge water. Four more FSTPs in Odisha (Surada, Kashinagar, Hinjilicut and Talcher) had no outlet water at the time of sampling, so the report has no effluent data for them and we left them out.
 
 ## Data extraction
 
-We copied the average discharge BOD of each plant from two places in the report into the file `data/derived_data/bod-discharge.csv`:
+We copied the average discharge BOD of each plant from two places in the report into the file `data-raw/bod-discharge.csv`:
 
 - Table 9 (FSTPs) and Table 10 (STPs) in the chapter on results and discussion. We call these the summary tables.
 - The outlet rows of Tables 1 to 7 in Annexure II, which hold the consolidated data for each state. For Bharwara, which has several outlet rows, we used the final outlet after chlorination.
