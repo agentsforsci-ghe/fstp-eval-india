@@ -32,7 +32,12 @@ knitr::opts_chunk$set(
 
 <!-- badges: end -->
 
-The goal of fstpindia is to ...
+The goal of fstpindia is to provide the data of the report *Evaluation of
+FSTPs and STP Co-treatment Systems across India* by the Centre for
+Science and Environment (CSE), New Delhi, 2023, as tidy datasets in R
+and as CSV and XLSX files. The report evaluated 69 faecal sludge
+treatment plants (FSTPs) and sewage treatment plants (STPs) with
+co-treatment of faecal sludge in eight Indian states.
 
 ## Installation
 
@@ -46,12 +51,11 @@ devtools::install_github("agentsforsci-ghe/fstp-eval-india")
 
 ```{r}
 ## Run the following code in console if you don't have the packages
-## install.packages(c("dplyr", "knitr", "readr", "stringr", "gt", "kableExtra"))
+## install.packages(c("dplyr", "knitr", "readr", "stringr", "kableExtra"))
 library(dplyr)
 library(knitr)
 library(readr)
 library(stringr)
-library(gt)
 library(kableExtra)
 ```
 
@@ -96,8 +100,7 @@ variables
 ```{r}
 bod_compliance |> 
   head(3) |> 
-  gt::gt() |>
-  gt::as_raw_html()
+  knitr::kable()
 ```
 
 For an overview of the variable names, see the following table.
