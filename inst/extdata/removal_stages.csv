@@ -1,0 +1,91 @@
+plant_id,state,plant,parameter,fs_mgl,inlet_mgl,outlet_mgl,fs_to_inlet_removal_pct,fs_to_outlet_removal_pct,inlet_to_outlet_removal_pct
+tg-boduppal,Telangana,Boduppal,COD,12750,636,57.3,95,99.6,91
+tg-bongir,Telangana,Bongir,COD,9400,226,49,97.6,99.5,78.3
+tg-kamareddy,Telangana,Kamareddy,COD,41767,1713,40.3,95.9,99.9,97.6
+tg-nalgonda,Telangana,Nalgonda,COD,48905,1441,41,97.1,99.9,97.2
+tg-nanakramguda,Telangana,Nanakramguda,COD,4553,1242.7,74.7,72.7,98.4,94
+tg-nirmal,Telangana,Nirmal,COD,54350,103,27,99.8,99.95,73.8
+tg-siddipet,Telangana,Siddipet,COD,67400,1163,24.3,98.3,99.96,97.9
+tg-sircilla,Telangana,Sircilla,COD,75375,303.3,124.7,99.6,99.8,58.9
+tg-uppal,Telangana,Uppal,COD,13410,181.3,82,98.6,99.4,54.8
+tg-warangal,Telangana,Warangal,COD,65950,351.3,46,99.5,99.9,86.9
+tn-ukkadam,Tamil Nadu,Ukkadam,COD,30090,768.7,82,97.4,99.7,89.3
+tn-periyanaickenpalayam,Tamil Nadu,PNP,COD,31000,254.7,163.3,99.2,99.5,35.9
+tn-erode,Tamil Nadu,Erode,COD,33043,301.3,53.3,99.1,99.8,82.3
+tn-thuraiyur,Tamil Nadu,Thurayiur,COD,37900,334,58.3,99.1,99.8,82.5
+tn-trichy,Tamil Nadu,Trichy,COD,25473,337.3,74.3,98.7,99.7,78
+tn-thirumangalam,Tamil Nadu,Thirumangalam,COD,36225,204,66.3,99.4,99.8,67.5
+tn-vickramasingapuram,Tamil Nadu,Vickramasingapuram,COD,95600,338,54.7,99.6,99.9,83.8
+up-modinagar,Uttar Pradesh,Modinagar,COD,101700,157,45,99.8,99.96,71.7
+up-loni,Uttar Pradesh,Loni,COD,64700,558,231,99.1,99.6,58.6
+up-jhansi-12-kld,Uttar Pradesh,Jhansi,COD,75167,185,75,99.8,99.9,59.4
+up-bijnor,Uttar Pradesh,Bijnor,COD,79750,164,64,99.8,99.9,61
+up-unnao,Uttar Pradesh,Unnao,COD,164500,487,54,99.7,99.97,89
+up-bharwara,Uttar Pradesh,Bharwara,COD,70575,253,78,99.6,99.9,69
+up-chunar,Uttar Pradesh,Chunar,COD,95367,91,60,99.9,99.9,33.8
+up-bingawan,Uttar Pradesh,Bingawan,COD,27149,495,94,98.2,99.7,81.1
+rj-phulera,Rajasthan,Phulera,COD,52434,373.2,78.6,99.3,99.9,78.9
+rj-lalsot,Rajasthan,Lalsot,COD,67838,368,67.6,99.5,99.9,81.6
+rj-khandela,Rajasthan,Khandela,COD,59667,324,65.6,99.5,99.9,79.8
+od-puri,Odisha,Puri,COD,20637,190.7,54,99.1,99.7,71.7
+od-balasore,Odisha,Balasore,COD,74900,1695,188.5,97.7,99.7,88.9
+od-baripada,Odisha,Baripada,COD,57880,1758.7,238,97,99.6,86.5
+od-bhubaneswar,Odisha,Bhubaneswar,COD,20524,458,83.5,97.8,99.6,81.8
+od-dhenkanal,Odisha,Dhenkanal,COD,3104,114.5,57,96.3,98.2,50.2
+od-berhampur,Odisha,Berhampur,COD,54632,780,217.7,98.6,99.6,72.1
+od-angul,Odisha,Angul,COD,61533,322.7,67.3,99.5,99.9,79.1
+od-sambalpur,Odisha,Sambalpur,COD,41562,151.3,21,99.6,99.9,86.1
+od-rourkela,Odisha,Rourkela,COD,42177,287.3,41,99.3,99.9,85.7
+od-bhadrak,Odisha,Bhadrak,COD,52625,643.3,105,98.7,99.8,83.6
+od-chodwar,Odisha,Chodwar,COD,6040,190.6,43,96.8,99.2,77.4
+od-jagatsinghpur,Odisha,Jagatsinghpur,COD,21740,1168.6,24.6,94.6,99.8,97.8
+od-khordha,Odisha,Khordha,COD,43700,400.6,65.6,99,99.8,83.6
+od-paralakhemundi,Odisha,Paralakhemundi,COD,3290,798.5,36,75.7,98.9,95.4
+mp-kalibillod,Madhya Pradesh,Indore,COD,107550,304,119,99.7,99.8,60.8
+cg-patora,Chhattisgarh,Patora,COD,79475,220.6,89,99.7,99.8,59.6
+cg-kumhari,Chhattisgarh,Kumhari,COD,35542,146.6,68.6,99.5,99.8,53.1
+tg-boduppal,Telangana,Boduppal,BOD,2550,135,13.3,94.7,99.48,90.1
+tg-bongir,Telangana,Bongir,BOD,1880,49.3,11,97.4,99.41,77.7
+tg-kamareddy,Telangana,Kamareddy,BOD,11328,350.7,11,96.9,99.9,96.9
+tg-nalgonda,Telangana,Nalgonda,BOD,12644,227.3,10.7,98.2,99.92,95.3
+tg-nanakramguda,Telangana,Nanakramguda,BOD,921,259,21.3,71.9,97.68,91.8
+tg-nirmal,Telangana,Nirmal,BOD,8750,23,7.5,99.7,99.91,67.4
+tg-siddipet,Telangana,Siddipet,BOD,17594,380,6.3,97.8,99.96,98.3
+tg-sircilla,Telangana,Sircilla,BOD,17116,64.3,24,99.6,99.86,62.7
+tg-uppal,Telangana,Uppal,BOD,420,46.7,14.3,88.9,96.59,69.3
+tg-warangal,Telangana,Warangal,BOD,10691,76,11.3,99.3,99.89,85.1
+tn-ukkadam,Tamil Nadu,Ukkadam,BOD,6912,186,23.3,97.3,99.66,87.5
+tn-periyanaickenpalayam,Tamil Nadu,PNP,BOD,8859,64,37.3,99.3,99.58,41.7
+tn-erode,Tamil Nadu,Erode,BOD,7285,75.7,13.7,99,99.81,81.9
+tn-thuraiyur,Tamil Nadu,Thurayiur,BOD,9828,82,15,99.2,99.85,81.7
+tn-trichy,Tamil Nadu,Trichy,BOD,6715,83.7,19.3,98.8,99.71,76.9
+tn-thirumangalam,Tamil Nadu,Thirumangalam,BOD,7382,49.3,16.3,99.3,99.78,66.9
+tn-vickramasingapuram,Tamil Nadu,Vickramasingapuram,BOD,28357,66.3,14.7,99.8,99.95,77.9
+up-modinagar,Uttar Pradesh,Modinagar,BOD,18340,40,11,99.8,99.94,71
+up-loni,Uttar Pradesh,Loni,BOD,10463,121,48,98.8,99.55,60.9
+up-jhansi-12-kld,Uttar Pradesh,Jhansi,BOD,9775,47,20,99.5,99.8,58
+up-bijnor,Uttar Pradesh,Bijnor,BOD,11575,40,16,99.7,99.87,61
+up-unnao,Uttar Pradesh,Unnao,BOD,10700,89,8,99.2,99.92,90.5
+up-bharwara,Uttar Pradesh,Bharwara,BOD,3513,62,12,98.2,99.65,79.9
+up-chunar,Uttar Pradesh,Chunar,BOD,11286,29,15,99.7,99.87,48.3
+up-bingawan,Uttar Pradesh,Bingawan,BOD,2648,130,13,95.1,99.5,89.8
+rj-phulera,Rajasthan,Phulera,BOD,5083,148.2,23.2,97.1,99.54,84.3
+rj-lalsot,Rajasthan,Lalsot,BOD,6928,121,19.4,98.3,99.72,84
+rj-khandela,Rajasthan,Khandela,BOD,5902,124.2,22.4,97.9,99.62,82
+od-puri,Odisha,Puri,BOD,3730,90,23.9,97.6,99.36,73.5
+od-balasore,Odisha,Balasore,BOD,4655,146.3,50,96.9,98.93,65.8
+od-baripada,Odisha,Baripada,BOD,6230,367.3,90,94.1,98.56,75.5
+od-bhubaneswar,Odisha,Bhubaneswar,BOD,3760,74.5,25.7,98,99.32,65.5
+od-dhenkanal,Odisha,Dhenkanal,BOD,299,56,30.6,81.3,89.76,45.3
+od-berhampur,Odisha,Berhampur,BOD,2018,153.3,27.6,92.4,98.63,82
+od-angul,Odisha,Angul,BOD,6313,162,26.7,97.4,99.58,83.5
+od-sambalpur,Odisha,Sambalpur,BOD,6565,76.3,14.1,98.8,99.79,81.5
+od-rourkela,Odisha,Rourkela,BOD,5635,89.3,18.2,98.4,99.68,79.6
+od-bhadrak,Odisha,Bhadrak,BOD,10475,282.4,22.1,97.3,99.8,92.2
+od-chodwar,Odisha,Chodwar,BOD,1518,166.1,12.1,89.1,99.2,92.7
+od-jagatsinghpur,Odisha,Jagatsinghpur,BOD,6428,259,11.9,96,99.8,95.4
+od-khordha,Odisha,Khordha,BOD,13003,148.2,24.6,98.9,99.8,83.4
+od-paralakhemundi,Odisha,Paralakhemundi,BOD,827,323,15.6,60.9,98.1,95.2
+mp-kalibillod,Madhya Pradesh,Indore,BOD,14340,69.3,27.7,99.5,99.8,60.1
+cg-patora,Chhattisgarh,Patora,BOD,16917,53,35.7,99.7,99.8,32.7
+cg-kumhari,Chhattisgarh,Kumhari,BOD,8267,22,17,99.7,99.8,22.7

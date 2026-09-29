@@ -1,0 +1,74 @@
+plant_id,plant_name,state,plant_type,tables_1_8_sno,tables_1_8,table_9,table_10,tables_11_13,annexure_2
+tg-boduppal,Boduppal,Telangana,FSTP,1,Boduppal,Boduppal,,Boduppal,Boduppal
+tg-uppal,Uppal,Telangana,FSTP,2,Uppal,Uppal,,Uppal,Uppal
+tg-khajaguda,Khajaguda,Telangana,STP co-treatment,3,Khajaguda,,Khajaguda,,Khajaguda
+tg-nanakramguda,Nanakramguda,Telangana,STP co-treatment,4,Nanakramguda,,Nanakramkuda,Nanakramguda,Nanakamguda
+tg-bongir,Bongir,Telangana,FSTP,5,Bhongir,Bongir,,Bongir,Bongir
+tg-shadnagar,Shadnagar,Telangana,FSTP,6,Shadnagar,Shandnagar,,,Shandnagar
+tg-siddipet,Siddipet,Telangana,FSTP,7,Siddipet,Siddipet,,Siddipet,Siddipet
+tg-sircilla,Sircilla,Telangana,FSTP,8,Sircilla,Sircilla,,Sircilla,Sircilla
+tg-nirmal,Nirmal,Telangana,FSTP,9,Nirmal,Nirmal,,Nirmal,Nirmal
+tg-kamareddy,Kamareddy,Telangana,FSTP,10,Kamareddy,Kamareddy,,Kamareddy,Kamareddy
+tg-warangal,Warangal,Telangana,FSTP,11,Warangal,Warangal,,Warangal,Warangal
+tg-nalgonda,Nalgonda,Telangana,FSTP,12,Nalgonda,Nalgonda,,Nalgonda,Nalgonda
+tn-ukkadam,Ukkadam,Tamil Nadu,STP co-treatment,1,"Ukkadam, Coimbatore",,Ukkadam,Ukkadam,"Ukkadam, Coimbatore"
+tn-periyanaickenpalayam,Periyanaickenpalayam,Tamil Nadu,FSTP,2,"PNP, Coimbatore",Periyanaickenpalayam,,PNP,Periyanaicken-palayam
+tn-erode,Erode,Tamil Nadu,STP co-treatment,3,Erode,,Erode,Erode,Erode
+tn-thuraiyur,Thuraiyur,Tamil Nadu,FSTP,4,"Thuraiyur, Tiruchirapalli",Thuraiyur,,Thurayiur,"Thuraiyur, Trichy"
+tn-trichy,Trichy,Tamil Nadu,STP co-treatment,5,Tiruchirapalli,,Trichy,Trichy,"Panjapur, Trichy"
+tn-madurai,Madurai,Tamil Nadu,STP co-treatment,6,Madurai,,Madurai,,"Avanipuram, Madurai"
+tn-thirumangalam,Thirumangalam,Tamil Nadu,FSTP,7,Tirumangalam Madurai,Thirumangalam,,Thirumangalam,"Thiruma-ngalam, Madurai"
+tn-vickramasingapuram,Vickramasingapuram,Tamil Nadu,FSTP,8,"VK puram, Tirunelveli",Vickramasingapuram,,Vickramasingapuram,Vickramasin-gapuram
+tn-shenkottai,Shenkottai,Tamil Nadu,FSTP,9,"Shenkottai, Thenkasi",Shenkottai,,,Sengottai
+od-puri,Puri,Odisha,STP co-treatment,1,Puri,,Puri,Puri,Puri
+od-balasore,Balasore,Odisha,FSTP,2,Balasore,Balasore,,Balasore,Balasore
+od-baripada,Baripada,Odisha,FSTP,3,Baripada,Baripada,,Baripada,Baripada
+od-bhubaneswar,Bhubaneswar,Odisha,FSTP,4,Bhubaneswar,Bhubaneswar,,Bhubaneswar,Bhubaneswar
+od-dhenkanal,Dhenkanal,Odisha,FSTP,5,Dhenkanal,Dhenkanal,,Dhenkanal,Dhenkanal
+od-berhampur,Berhampur,Odisha,FSTP,6,Berhampur,Berhampur,,Berhampur,Berhampur
+od-angul,Angul,Odisha,FSTP,7,Angul,Angul,,Angul,Angul
+od-sambalpur,Sambalpur,Odisha,FSTP,8,Sambalpur,Sambalpur,,Sambalpur,Sambalpur
+od-rourkela,Rourkela,Odisha,FSTP,9,Rourkela,Rourkela,,Rourkela,Rourkela
+od-asika,Asika,Odisha,FSTP,10,Asika,Asika,,,Asika
+od-bhadrak,Bhadrak,Odisha,FSTP,11,Bhadrak,Bhadrak,,Bhadrak,Bhadrak
+od-chodwar,Chodwar,Odisha,FSTP,12,Choudwar,Chodwar,,Chodwar,Chodwar
+od-jagatsinghpur,Jagatsinghpur,Odisha,FSTP,13,Jagatsinghpur,Jagatsinghpur,,Jagatsinghpur,Jagatsinghpur
+od-jatni,Jatni,Odisha,FSTP,14,Jatni,Jatni,,,Jatni
+od-khordha,Khordha,Odisha,FSTP,15,Khordha,Khordha,,Khordha,Khordha
+od-nimapada,Nimapada,Odisha,FSTP,16,Nimapada,Nimapada,,,Nimapada
+od-paralakhemundi,Paralakhemundi,Odisha,FSTP,17,Paralakhemundi,Paralakhemundi,,Paralakhemundi,Paralakhe-mundi
+od-surada,Surada,Odisha,FSTP,18,Surada**,,,,
+od-kashinagar,Kashinagar,Odisha,FSTP,19,Kashinagar**,,,,
+od-hinjilicut,Hinjilicut,Odisha,FSTP,20,Hinjilicut**,,,,
+od-talcher,Talcher,Odisha,FSTP,21,Talcher**,,,,
+rj-phulera,Phulera,Rajasthan,FSTP,1,Phulera,Phulera,,Phulera,Phulera
+rj-lalsot,Lalsot,Rajasthan,FSTP,2,Lalsot,Lalsot,,Lalsot,Lalsot
+rj-khandela,Khandela,Rajasthan,FSTP,3,Khandela,Khandela,,Khandela,Khandela
+up-unnao,Unnao,Uttar Pradesh,FSTP,1,Unnao,Unnao,,Unnao,Unnao
+up-jhansi-6-kld,Jhansi 6 KLD,Uttar Pradesh,FSTP,2,Jhansi,Jhansi 6KLD,,,Jhansi II (6KLD)
+up-jhansi-12-kld,Jhansi 12 KLD,Uttar Pradesh,FSTP,3,Jhansi,Jhansi 12KLD,,Jhansi,Jhansi I (12KLD)
+up-chunar,Chunar,Uttar Pradesh,FSTP,4,Chunar,Chunar,,Chunar,Chunar
+up-modinagar,Modinagar,Uttar Pradesh,FSTP,5,Modinagar,Modinagar*,,Modinagar,Modinagar
+up-loni,Loni,Uttar Pradesh,FSTP,6,Loni,Loni,,Loni,Loni
+up-amethi,Amethi,Uttar Pradesh,FSTP,7,Amethi,Amethi,,,Amethi
+up-bharwara,Bharwara,Uttar Pradesh,STP co-treatment,8,Bharwara,,Bharwara,Bharwara,Bharwara
+up-bijnor,Bijnor,Uttar Pradesh,STP co-treatment,9,Bijnor,,Bijnor,Bijnor,Bijnor
+up-bingawan,Bingawan,Uttar Pradesh,STP co-treatment,10,Bingawan,,Bingwan,Bingawan,Bingawan STP
+mp-kalibillod,Kalibillod,Madhya Pradesh,FSTP,1,Indore,"Kalibilod, Indore",,Indore,"Kalibillod, Indore"
+mp-elanza,Elanza,Madhya Pradesh,FSTP,2,"Elanza, Jabalpur","Elanza, Jabalpur",,,Elanza
+mp-ojus,Ojus,Madhya Pradesh,FSTP,3,"Ojus, Jabalpur","Ojus, Jabalpur",,,Ojus
+mp-st-alosius,St. Alosius,Madhya Pradesh,FSTP,4,"St.Alosius, Jabalpur","St.Alosius, Jabalpur",,,St.Alosius
+cg-kumhari,Kumhari,Chhattisgarh,FSTP,1,Kumhari,"Kumhari, Raipur",,Kumhari,Kumhari
+cg-patora,Patora,Chhattisgarh,FSTP,2,Patora,"Patora, Raipur",,Patora,Patora
+uk-lakkarghat,Lakkarghat,Uttarakhand,STP co-treatment,1,"Lakkarghat, Rishikesh",,Lakkarghat,,Lakkarghat
+uk-chorpani,Chorpani,Uttarakhand,STP co-treatment,2,"Chorpani, Rishikesh",,Chorpani,,Chorpani
+uk-chandreswar,Chandreswar,Uttarakhand,STP co-treatment,3,"Chandreswar, Rishikesh",,Chandreswar,,Chandreswar
+uk-tapovan,Tapovan,Uttarakhand,STP co-treatment,4,"Tapovan, Rishikesh",,Tapovan,,Tapovan
+uk-mothrowala-i,Mothrowala-I,Uttarakhand,STP co-treatment,5,"Mothrowala-I, Dehradun",,Mothrowala -I,,Mothrowala-I (20)
+uk-mothrowala-ii,Mothrowala-II,Uttarakhand,STP co-treatment,6,"Mothrowala-II, Dehradun",,Mothrowala -II,,Mothrowala-II (20)
+uk-indira-nagar,Indira Nagar,Uttarakhand,STP co-treatment,7,"Indira Nagar, Dehradun",,Indranagar,,Indira Nagar
+uk-jagjeetpur-i,Jagjeetpur-I,Uttarakhand,STP co-treatment,8,"Jagjeetpur, Haridwar",,Jagjeetpur-I,,Jagjeetpur-I (68)
+uk-jagjeetpur-ii,Jagjeetpur-II,Uttarakhand,STP co-treatment,9,"Jagjeetpur, Haridwar",,Jagjeetpur- II,,Jagjeetpur-II (27)
+uk-jagjeetpur-iii,Jagjeetpur-III,Uttarakhand,STP co-treatment,10,"Jagjeetpur, Haridwar",,Jagjeetpur-III,,Jagjeetpur-III (18)
+uk-sarai-i,Sarai-I,Uttarakhand,STP co-treatment,11,"Sarai, Haridwar",,Sarai -I,,Sarai-I (18)
+uk-sarai-ii,Sarai-II,Uttarakhand,STP co-treatment,12,"Sarai, Haridwar",,Sarai -II,,Sarai-II (14)

@@ -1,0 +1,70 @@
+plant_id,plant,state,plant_type,technology,bod_summary_mgl,bod_annex_mgl
+tg-siddipet,Siddipet,Telangana,FSTP,DEWATS,6.3,6.3
+tg-sircilla,Sircilla,Telangana,FSTP,DEWATS,24,24
+tn-thirumangalam,Thirumangalam,Tamil Nadu,FSTP,DEWATS,16.3,16.3
+tn-thuraiyur,Thuraiyur,Tamil Nadu,FSTP,DEWATS,15,15
+tn-vickramasingapuram,Vickramasingapuram,Tamil Nadu,FSTP,DEWATS,14.7,14.7
+tn-shenkottai,Shenkottai,Tamil Nadu,FSTP,DEWATS,42.7,42.7
+up-jhansi-12-kld,Jhansi 12 KLD,Uttar Pradesh,FSTP,DEWATS,20,19.7
+up-jhansi-6-kld,Jhansi 6 KLD,Uttar Pradesh,FSTP,DEWATS,16.7,16.7
+up-unnao,Unnao,Uttar Pradesh,FSTP,DEWATS,8.4,8.4
+up-chunar,Chunar,Uttar Pradesh,FSTP,DEWATS,20,14.7
+up-amethi,Amethi,Uttar Pradesh,FSTP,DEWATS,48.3,30.1
+rj-phulera,Phulera,Rajasthan,FSTP,DEWATS,23.2,23.2
+rj-lalsot,Lalsot,Rajasthan,FSTP,DEWATS,19.4,19.4
+rj-khandela,Khandela,Rajasthan,FSTP,DEWATS,22.4,22.4
+od-balasore,Balasore,Odisha,FSTP,DEWATS,50,50
+od-baripada,Baripada,Odisha,FSTP,DEWATS,90,90
+od-bhubaneswar,Bhubaneswar,Odisha,FSTP,DEWATS,25.7,25.7
+od-dhenkanal,Dhenkanal,Odisha,FSTP,DEWATS,30.6,14
+od-berhampur,Berhampur,Odisha,FSTP,DEWATS,27.6,27.6
+od-angul,Angul,Odisha,FSTP,DEWATS,26.7,26.7
+od-sambalpur,Sambalpur,Odisha,FSTP,DEWATS,14.1,14.1
+od-rourkela,Rourkela,Odisha,FSTP,DEWATS,18.2,18.2
+od-asika,Asika,Odisha,FSTP,DEWATS,6.1,6.1
+od-bhadrak,Bhadrak,Odisha,FSTP,DEWATS,32.1,32.1
+od-chodwar,Chodwar,Odisha,FSTP,DEWATS,13.5,13.5
+od-jagatsinghpur,Jagatsinghpur,Odisha,FSTP,DEWATS,7.5,7.5
+od-jatni,Jatni,Odisha,FSTP,DEWATS,28.5,28.5
+od-khordha,Khordha,Odisha,FSTP,DEWATS,20.6,20.6
+od-nimapada,Nimapada,Odisha,FSTP,DEWATS,9,9
+od-paralakhemundi,Paralakhemundi,Odisha,FSTP,DEWATS,10.5,10.5
+cg-patora,Patora,Chhattisgarh,FSTP,DEWATS,22,22
+cg-kumhari,Kumhari,Chhattisgarh,FSTP,DEWATS,17,17
+mp-kalibillod,Kalibillod,Madhya Pradesh,FSTP,DEWATS,27.7,27.7
+tg-kamareddy,Kamareddy,Telangana,FSTP,MBBR,11,11
+tg-nirmal,Nirmal,Telangana,FSTP,MBBR,7.5,7.5
+tg-uppal,Uppal,Telangana,FSTP,MBBR,14.33,14.3
+tn-periyanaickenpalayam,Periyanaickenpalayam,Tamil Nadu,FSTP,MBBR,37.3,37.3
+up-loni,Loni,Uttar Pradesh,FSTP,MBBR,48,47.5
+up-modinagar,Modinagar,Uttar Pradesh,FSTP,MBBR,11,11.5
+tg-boduppal,Boduppal,Telangana,FSTP,Geotube,13.33,13.3
+tg-bongir,Bongir,Telangana,FSTP,Geotube,11,11
+tg-shadnagar,Shadnagar,Telangana,FSTP,Geotube,13,13
+mp-ojus,Ojus,Madhya Pradesh,FSTP,Mizuchi,6.5,6.5
+mp-elanza,Elanza,Madhya Pradesh,FSTP,Mizuchi,11.5,11.5
+mp-st-alosius,St. Alosius,Madhya Pradesh,FSTP,Mizuchi,8.6,8.6
+tg-nalgonda,Nalgonda,Telangana,FSTP,Electrocoagulation,10.67,10.7
+tg-warangal,Warangal,Telangana,FSTP,Packaged STP with pyrolysis,11.33,11.3
+uk-lakkarghat,Lakkarghat,Uttarakhand,STP co-treatment,SBR,7.5,7.5
+uk-tapovan,Tapovan,Uttarakhand,STP co-treatment,SBR,2.8,3.8
+uk-mothrowala-i,Mothrowala-I,Uttarakhand,STP co-treatment,SBR,4.3,4.3
+uk-mothrowala-ii,Mothrowala-II,Uttarakhand,STP co-treatment,SBR,13.3,13.3
+uk-indira-nagar,Indira Nagar,Uttarakhand,STP co-treatment,SBR,7.9,7.9
+uk-jagjeetpur-i,Jagjeetpur-I,Uttarakhand,STP co-treatment,SBR,3.8,3.8
+uk-jagjeetpur-ii,Jagjeetpur-II,Uttarakhand,STP co-treatment,SBR,13,13
+uk-sarai-i,Sarai-I,Uttarakhand,STP co-treatment,SBR,12,12
+uk-sarai-ii,Sarai-II,Uttarakhand,STP co-treatment,SBR,19,19
+tn-madurai,Madurai,Tamil Nadu,STP co-treatment,SBR,17.3,17.3
+tn-ukkadam,Ukkadam,Tamil Nadu,STP co-treatment,SBR,23.3,23.3
+tn-erode,Erode,Tamil Nadu,STP co-treatment,MBBR,13.7,13.7
+tg-khajaguda,Khajaguda,Telangana,STP co-treatment,MBBR,20.5,20.5
+tg-nanakramguda,Nanakramguda,Telangana,STP co-treatment,MBBR,21.33,21.3
+uk-chorpani,Chorpani,Uttarakhand,STP co-treatment,MBBR,11.9,11.9
+uk-chandreswar,Chandreswar,Uttarakhand,STP co-treatment,MBBR,7,7
+up-bingawan,Bingawan,Uttar Pradesh,STP co-treatment,UASB,13,13.2
+up-bharwara,Bharwara,Uttar Pradesh,STP co-treatment,UASB,12,12.44
+up-bijnor,Bijnor,Uttar Pradesh,STP co-treatment,UASB,16,15.6
+tn-trichy,Trichy,Tamil Nadu,STP co-treatment,Waste stabilisation pond,19.3,19.3
+od-puri,Puri,Odisha,STP co-treatment,Waste stabilisation pond,23.9,23.9
+uk-jagjeetpur-iii,Jagjeetpur-III,Uttarakhand,STP co-treatment,ASP,10,10

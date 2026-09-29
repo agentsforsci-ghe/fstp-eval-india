@@ -1,0 +1,46 @@
+plant_id,state,plant,ph,ts_mgl,cod_mgl,bod_mgl,faecal_coliform_mpn_100ml,ts_cod_ratio,cod_bod_ratio
+tg-boduppal,Telangana,Boduppal,7.1,11085,12750,2550,430000,0.87,5
+tg-bongir,Telangana,Bongir,7.1,9569,9400,1880,9300,1.02,5
+tg-kamareddy,Telangana,Kamareddy,7.9,30378,41767,11328,886667,0.73,3.69
+tg-nalgonda,Telangana,Nalgonda,7.9,48884,48905,12644,1365000,1,3.87
+tg-nanakramguda,Telangana,Nanakramguda,3.8,4847,4553,921,120018,1.06,4.94
+tg-nirmal,Telangana,Nirmal,8.6,22000,54350,8750,110000,0.4,6.21
+tg-siddipet,Telangana,Siddipet,7.4,52923,67400,17594,11000000,0.79,3.83
+tg-sircilla,Telangana,Sircilla,8.9,25261,75375,17116,1570000,0.34,4.4
+tg-uppal,Telangana,Uppal,7.9,2644,13410,420,380000,0.2,31.93
+tg-warangal,Telangana,Warangal,8,27756,65950,10691,6700000,0.42,6.17
+tn-ukkadam,Tamil Nadu,Ukkadam,7.7,2462,30090,6912,403333,0.08,4.35
+tn-periyanaickenpalayam,Tamil Nadu,PNP,7.9,3402,31000,8859,150000,0.11,3.5
+tn-erode,Tamil Nadu,Erode,8,12094,33043,7285,620800,0.37,4.54
+tn-thuraiyur,Tamil Nadu,Thurayiur,5,4783,37900,9828,30,0.13,3.86
+tn-trichy,Tamil Nadu,Trichy,8,4059,25473,6715,2176667,0.16,3.79
+tn-thirumangalam,Tamil Nadu,Thirumangalam,7.6,6596,36225,7382,226500,0.18,4.91
+tn-vickramasingapuram,Tamil Nadu,Vickramasingapuram,7.9,83389,95600,28357,43000,0.87,3.37
+up-modinagar,Uttar Pradesh,Modinagar,7,58892,101700,18340,46000000,0.58,5.55
+up-loni,Uttar Pradesh,Loni,7.8,15245,64700,10463,2154600,0.24,6.18
+up-jhansi-12-kld,Uttar Pradesh,Jhansi,7.8,37347,75167,9775,5114333,0.5,7.69
+up-bijnor,Uttar Pradesh,Bijnor,8.2,47684,79750,11575,230000,0.6,6.89
+up-unnao,Uttar Pradesh,Unnao,7.4,63807,164500,10700,304080,0.39,15.37
+up-bharwara,Uttar Pradesh,Bharwara,7.5,51328,70575,3513,1365000,0.73,20.09
+up-chunar,Uttar Pradesh,Chunar,7.1,79352,95367,11286,4866667,0.83,8.45
+up-bingawan,Uttar Pradesh,Bingawan,7.4,27580,27149,2648,3171000,1.02,10.25
+rj-phulera,Rajasthan,Phulera,8.5,43537,52434,5083,2580000,0.83,10.32
+rj-lalsot,Rajasthan,Lalsot,8,48797,67838,6928,3018250,0.72,9.79
+rj-khandela,Rajasthan,Khandela,9.1,23706,59667,5902,234333,0.4,10.11
+od-puri,Odisha,Puri,7.2,29717,20637,3730,670000,1.44,5.53
+od-balasore,Odisha,Balasore,7.5,57619,74900,4655,21100000,0.77,16.09
+od-baripada,Odisha,Baripada,7.6,46736,57880,6230,38103100,0.81,9.29
+od-bhubaneswar,Odisha,Bhubaneswar,7.1,7817,20524,3760,141500,0.38,5.46
+od-dhenkanal,Odisha,Dhenkanal,7.7,4485,3104,299,1380000,1.45,10.38
+od-berhampur,Odisha,Berhampur,7.7,46486,54632,2018,5200000,0.85,27.07
+od-angul,Odisha,Angul,7.6,30658,61533,6313,1250000,0.5,9.75
+od-sambalpur,Odisha,Sambalpur,7.8,31578,41562,6565,8300000,0.76,6.33
+od-rourkela,Odisha,Rourkela,7.7,37469,42177,5635,545333,0.89,7.48
+od-bhadrak,Odisha,Bhadrak,6.9,11836,52625,10475,1275000,0.22,5.02
+od-chodwar,Odisha,Chodwar,6.9,4089,6040,1518,430000,0.68,3.98
+od-jagatsinghpur,Odisha,Jagatsinghpur,7.2,905,21740,6428,2515000,0.04,3.38
+od-khordha,Odisha,Khordha,6.9,9627,43700,13003,930000,0.22,3.36
+od-paralakhemundi,Odisha,Paralakhemundi,7.4,11064,3290,827,230000,3.36,3.98
+mp-kalibillod,Madhya Pradesh,Indore,7.97,54263,107550,14340,2400000,0.5,7.5
+cg-patora,Chhattisgarh,Patora,8,82593,79475,16917,2765000,1.04,4.7
+cg-kumhari,Chhattisgarh,Kumhari,7.4,18615,35543,8267,5965000,0.52,4.3
